@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datatypes</title>
+    </head>
+    <body>
+        <h2>There are many types are here:</h2>
+        <h3>1. Null</h3>
+        <h3>2. Undefined</h3>
+        <h3>3. Number</h3>
+        <h3>4. Boolean</h3>
+        <h3>5. Bigint</h3>
+        <h3>6. String</h3>
+        <h3>7. Symbol</h3>
+
+        <!-- <h4>Null</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            var empty = null;// result --> false
+            console.log(empty);
+            // document.getElementById("task").innerHTML = empty;
+        </script>
+
+        <!-- <h4>undefined</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            let k ;
+            console.log(k); // result --> undefined
+            console.log(typeof k); // result --> undefined
+            // document.getElementById("task").innerHTML = k + "<br>" + typeof k; // result --> undefined
+        </script>
+
+        <p id="task"></p>
+        <script>
+            console.log(b);
+            // document.getElementById("task").innerHTML = b ;
+            var b = "khyati";
+            // let b ="khyati";
+            // const b = "khyati";
+        </script>
+
+        <!-- <h4>string</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            let fruit1 = "mango";
+            let fruit2 = 'mango';
+            // document.getElementById("task").innerHTML= fruit1 + "<br>" + fruit2;
+            console.log(fruit1);
+            console.log(fruit2);
+        </script>
+
+        <!-- <h4>numbers</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            let x1 = 23;
+            let x2 = 23.00;
+            let x3 = 2.37;
+            // document.getElementById("task").innerHTML = x1 + "<br>" + x2 + "<br>" + x3;
+            console.log(x1);
+            console.log(x2);
+            console.log(x3);
+        </script>
+
+        <!-- <h4>bigint</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            let x = BigInt("96627004586354396352");
+            console.log(x);
+            // document.getElementById("task").innerHTML = x;
+        </script>
+
+        <!-- <h4>Booleans</h4> -->
+        <!-- <p id="task"></p> -->
+        <script>
+            let s = "khyati";
+            let y = "jani";
+            let z = "khyati";
+            // document.getElementById("task").innerHTML = (s==y) + "<br>" + (s==z);
+                if (s==y){
+                    console.log(true)
+                }
+                else{
+                    console.log(false)
+                }
+
+                if(s==z){
+                    console.log(true)
+                }
+                else{
+                    console.log(false)
+                }
+        </script>
+
+        <h3>Hoisting:</h3>
+        <h4>It means we can access variable before its declaration. But it is not possible in 'Let' and 'Const'.</h4>
+        <h4>Let and Const can't support the concept of hoisting.</h4>
+        <!-- <p id="task"></p> -->
+        <script>
+            console.log(var_jk);
+            // document.getElementById("task").innerHTML = var_jk;
+            var var_jk ="var_jk";
+        </script>
+
+        <!-- <p id="task"></p> -->
+        <script>
+            // console.log(var_let);
+            // document.getElementById("task").innerHTML = let_k;
+            // let let_k ="let_k";
+        </script>
+        
+        <!-- <p id="task"></p> -->
+        <script>
+            // console.log(const_k);
+            // document.getElementById("task").innerHTML = const_k;
+            // const const_k ="const_k";
+        </script>
+    </body>
+</html>
