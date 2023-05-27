@@ -1,0 +1,76 @@
+ <!-- Q.1 What is JavaScript Output method? 
+        There are a total of six ways to display text and/or content with JavaScript, depending on where you want to write it to; the first three are properties, while the other three are methods.
+        The innerHTML, innerText and textContent properties written into an html element.
+        The document.write() method writes directly into the HTML output.
+        The window.alert() method displays an alert box, suitable for displaying error messages and the like.
+        The console.log() method writes to the browser console, making it ideal for displaying debugging information.-->
+
+
+ <!-- Q.2 How to used JavaScript Output method? -->
+        <!-- Using innerHTML: To acces an HTML element, JavaScript can use the document.getElementById(id) method.
+                              The id attribute defines the HTML element. The innerHTML property defines the HTML content: 
+
+                              Changing the innerHTML property of an HTML element is common way to display data in HTML.-->
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <p>Using innerHTML:</p>
+                    <p id="task"></p>
+                    <script>
+                        document.getElementById("task").innerHTML = "Khyati Jani" ;
+                    </script>
+                </body>
+            </html>      
+
+        <!-- Using document.write(): for testing purposes, it is convenient to use document.write():-->
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <p>Using document.write():</p>
+                    <script>
+                        document.write(2+7);
+                    </script>
+                </body>
+            </html>
+        <!-- Using document.write() after an HTML document is loaded, will delete all existing HTML: -->
+            <!DOCTYPE html>
+            <html>
+                <p>Using document.write() after an HTML document is loaded, will delete all existing HTML: </p>
+                <body>
+                    <button type="button" onclick='document.write("Hello Khyati")'>try it</button>
+                </body>
+            </html>
+        <!-- Using window.alert(): you can use an alert box to diaplay data: -->
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <script>
+                        window.alert("welcome to this page");
+                    </script>
+                </body>
+            </html>
+            <!-- you can skip the window keyword.
+                In JavaScript, the window object is the global scope object this means that variables, properties, and methods by default belong to the window object. this also means that apecifying the window keyword is optional:-->
+                <!DOCTYPE html>
+                <html>
+                    <body>
+                        <script>
+                            alert("welcome to this page");
+                        </script>
+                    </body>
+                </html>
+        <!-- Using console.log(): For debugging purposes, you can call the console.log() method in the browser to diplay data-->
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <script>
+                        console.log("Khyati Jani");
+                    </script>
+                </body>
+            </html>
+    <!-- How to used JavaScript Events to do all examples? 
+            There are many events are here:
+                1.Input Events
+                2.Mouse Events
+                3.Click Events
+                4.Load Events
